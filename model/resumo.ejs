@@ -1,0 +1,111 @@
+<!-- <%- include('./style_model/styleEJS.ejs'); %> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./style_model/styleEJS.ejs'); %>
+    <title>Modelo de Relatório</title>
+</head>
+
+<body>
+    <section>
+        <div class="dadosPessoais">
+            <div class="fotoPerfil">
+                <div class="foto">
+                    <img src="https://i.pinimg.com/originals/68/b5/da/68b5da5de55859e7385924b2a78ccd5a.png"
+                        alt="stitch">
+                </div>
+                <div class="perfilText">
+                    <h2><span>
+                            <%= nome %>
+                        </span>
+                        <%= sobrenome %>
+                    </h2>
+                    <h3>
+                        <%= profissao %>
+                    </h3>
+                    <!-- <p>
+                        <%= nascimento %>
+                    </p> -->
+                </div>
+            </div>
+            <div class="profile">
+                <h3>PROFILE</h3>
+                <p>
+                    <%= sobre %>
+                </p>
+            </div>
+            <div class="skills">
+                <h2>SKILLS</h2>
+                <div class="containerSkill">
+                    <div class="skill01">
+                        <p>SCRUM: 80%</p>
+                        <p>KAMBAN: 50%</p>
+                        <p>SOLID: 60%</p>
+                    </div>
+                    <div class="skill02">
+                        <p>SCRUM: 80%</p>
+                        <p>KAMBAN: 50%</p>
+                        <p>SOLID: 60%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <a href="https://pt-br.facebook.com/"><img
+                        src="https://img.icons8.com/material-rounded/344/facebook-new.png" alt="facebookIcon"></a>
+                <a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-glyphs/344/instagram-new.png"
+                        alt="instragramIcon"></a>
+                <a href="https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><img
+                        src="https://img.icons8.com/ios-filled/344/linkedin-circled--v1.png" alt="linkedin"></a>
+
+            </div>
+        </div>
+        <div class="dadosProfissionais">
+            <div class="contato">
+                <p>Telefone: <span>
+                        <%= telefone %>
+                    </span></p>
+                <p>email: <span>
+                        <%= email %>
+                    </span></p>
+            </div>
+            <div class="formacao">
+                <h2>FORMAÇÃO</h2>
+                <div class="containerFormacao">
+                    <h2><%= formacao01 %></h2>
+                    <p>TAL ESCOLA</p>
+                </div>
+                <div class="containerFormacao">
+                    <h2><%= formacao02 %></h2>
+                    <p>TAL FACULDADE</p>
+                </div>
+                <div class="containerFormacao">
+                    <h2><%= formacao03 %></h2>
+                    <p>TAL TÉCNICO</p>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>EXPERIÊNCIAS</h2>
+
+                <div class="containerExp">
+                    <h2><%= experiencia01 %></h2>
+                    <p>TAL ESCOLA</p>
+                </div>
+                <div class="containerExp">
+                    <h2><%= experiencia02 %></h2>
+                    <p>TAL FACULDADE</p>
+                </div>
+                <div class="containerExp">
+                    <h2><%= experiencia03 %></h2>
+                    <p>TAL TÉCNICO</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
